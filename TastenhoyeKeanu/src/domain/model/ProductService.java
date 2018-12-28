@@ -26,9 +26,7 @@ public class ProductService {
         return productRepository.sortProducts();
     }
 
-    public List<Product> allVegetarianProducts() {
-        return productRepository.getAllVegetarianProducts();
-    }
+    public List<Product> allVegetarianProducts() { return productRepository.getAllVegetarianProducts(); }
 
     public List<Product> allNonVegetarianProducts() {
         return productRepository.getAllNonVegetarianProducts();

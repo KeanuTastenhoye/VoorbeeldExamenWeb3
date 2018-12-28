@@ -7,8 +7,8 @@ import javax.servlet.http.HttpServletResponse;
 public class VegiCookie extends RequestHandler {
     @Override
     public String handleRequest(HttpServletRequest request, HttpServletResponse response) {
-        String keuze = request.getParameter("veggie");
-        Cookie cookie = new Cookie("vegi", keuze);
+        String veggie = request.getParameter("veggie");
+        Cookie cookie = new Cookie("vegi", veggie);
 
         response.addCookie(cookie);
 

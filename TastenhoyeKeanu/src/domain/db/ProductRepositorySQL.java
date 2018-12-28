@@ -75,7 +75,7 @@ public class ProductRepositorySQL implements ProductRepository {
     public List<Product> sortProducts() {
         String sql = "Select * " +
                      "From veggie " +
-                     "Order By price";
+                     "Order By price DESC";
 
         try (Connection connection = DriverManager.getConnection(url, properties); Statement statement = connection.createStatement()) {
             ResultSet result = statement.executeQuery(sql);

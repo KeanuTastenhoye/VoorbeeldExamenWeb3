@@ -14,9 +14,7 @@
 		<h1>Veggie</h1>
 		<p><a href="Controller?action=ProductOverview">Toon mij alle producten.</a> </p>
 
-		<p>Je bent momenteel wel/niet vegetarisch.</p>
-
-		<form method="post" action="Controller?action=VegiCookie">
+		<form method="post" action="Controller?action=VegiCookie" novalidate="novalidate">
 			Ben je vegetarisch?
 			<p>
 				<label>
@@ -32,6 +30,9 @@
 				<input type="submit" value="Send">
 			</p>
 		</form>
+
+		<p>${vegi}</p>
+
 		<p>
 			<a href="Controller?action=ProductOverview">
 				Toon de gerechten van mijn voorkeur.
